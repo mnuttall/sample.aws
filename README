@@ -5,6 +5,8 @@ a Dockerfile.
 
 This .zip file can then be deployed to Amazon Elasticbeanstalk. 
 
+We hope to add Travis integration in a future update. 
+
 So: 
 Register for Amazon AWS. 
 Set up aws command line. 
