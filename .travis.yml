@@ -1,12 +1,13 @@
 language: java
 deploy:
-    - provider: elasticbeanstalk
-      app: sample.aws
-      env: sample.aws.env
-      bucket_name: elasticbeanstalk-eu-west-1-299743145002
-      region: eu-west-1
-      access-key-id: $ACCESS_KEY_ID
-      secret-access-key: $SECRET_ACCESS_KEY
-      zip_file: target/upload-1.0.zip
-      on:
-        all_branches: true
+  skip_cleanup: true
+  - provider: elasticbeanstalk
+    app: sample.aws
+    env: sample.aws.env
+    bucket_name: elasticbeanstalk-eu-west-1-299743145002
+    region: eu-west-1
+    access-key-id: $ACCESS_KEY_ID
+    secret-access-key: $SECRET_ACCESS_KEY
+    zip_file: target/upload-1.0.zip
+    on:
+      all_branches: true
