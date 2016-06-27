@@ -1,7 +1,7 @@
 language: java
 deploy:
-  skip_cleanup: true
   - provider: elasticbeanstalk
+    skip_cleanup: true
     app: sample.aws
     env: sample.aws.env
     bucket_name: elasticbeanstalk-eu-west-1-299743145002
