@@ -8,3 +8,5 @@ deploy:
       access_key_id: $ACCESS_KEY_ID
       secret_access_key: $SECRET_ACCESS_KEY
       zip_file: target/upload-1.0.zip
+      on:
+        all_branches: true
