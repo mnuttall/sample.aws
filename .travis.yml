@@ -3,7 +3,7 @@ deploy:
   - provider: elasticbeanstalk
     skip_cleanup: true
     app: sample.aws
-    env: sample.aws.env
+    env: sample.aws-env
     bucket_name: elasticbeanstalk-eu-west-1-299743145002
     region: eu-west-1
     access-key-id: $ACCESS_KEY_ID
