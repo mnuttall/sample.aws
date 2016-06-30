@@ -5,7 +5,7 @@ a Dockerfile.
 
 This .zip file can then be deployed to Amazon Elasticbeanstalk. 
 
-We hope to add Travis integration in a future update. 
+Travis integration is provided via .travis.yml. 
 
 So: 
 Register for Amazon AWS. 
@@ -15,6 +15,9 @@ Install a Java compiler - 'dnf install java-1.?.0-openjdk-devel' on Fedora
 mvn clean install
 
 This builds target/upload-1.0.zip
+
+This zip file will be deployed as a Docker container to Amazon Elastic
+Beanstalk by Travis. It's also possible to deploy it manually:
 
 sudo dnf install jq
 
